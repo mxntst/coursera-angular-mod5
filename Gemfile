@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-ruby "2.3.3"
+ruby "2.4.4"
+
 
 gem 'rails', '4.2.8'
 gem 'sass-rails', '~> 5.0'
@@ -18,10 +19,10 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 0.15'
   gem 'rails_12factor'
   gem 'pry'
 end
 
 gem 'rack-cors', require: 'rack/cors'
-gem 'rails_api_auth'
+gem 'rails_api_auth', '0.0.5'
