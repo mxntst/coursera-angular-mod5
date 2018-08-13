@@ -1,0 +1,18 @@
+<div id="awards-view" class="container">
+  <h2 class="text-center">My Info</h2>
+  <div class="alert alert-warning" ng-if="!myInfo.reg">
+    <strong>Not Signed Up Yet.
+      <a ui-sref="public.sign-up">Sign up Now!</a>
+    </strong>
+  </div>
+  <div ng-if="myInfo.reg">
+    {{myInfo.reg.firstName}} {{myInfo.reg.lastName}}
+    <br/>
+    <a href="mailto: {{myInfo.reg.email}}">{{myInfo.reg.email}}</a>
+    <br/>
+    <a href="tel: {{myInfo.reg.phone}}">{{myInfo.reg.phone}}</a>
+    <br/>
+    <a ui-sref="public.sign-up">Edit Settings</a>
+  </div>
+
+</div>
