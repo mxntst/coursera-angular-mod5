@@ -1,0 +1,29 @@
+<div id="awards-view" class="container">
+  <h2 class="text-center">Sign Up</h2>
+  <form name="formSignUp" class="form-vertical" novalidate>
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" required ng-model="reg.firstName" class="form-control"  placeholder="Enter your first name"/>
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" required ng-model="reg.lastName" class="form-control" placeholder="Enter your last name"/>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required ng-model="reg.email"  class="form-control" placeholder="Enter your email"/>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone"  required ng-model="reg.phone" pattern="(\+)?(\d)+(\d|-|\s)*(\d)+" class="form-control" placeholder="Enter your phone number"/>
+    </div>
+    <div class="form-group">
+      <label for="favMenu">Favorite Menu:</label>
+      <input type="text" id="favMenu"  required ng-model="reg.favMenu"  class="form-control" placeholder="Enter your favorite menu short name"/>
+    </div>
+    <div class="form-group">
+      <button ng-disabled="formSignUp.$invalid" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+  
+</div>
